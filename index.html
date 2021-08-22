@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -----------Bootstrap Link------------- -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    
+    <title>Build PC</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container my-5">
+          <div class="row">
+            <!-- ---------------macbook image------- -->
+            <div class="col-12 col-lg-6">
+              <img
+                class="img-fluid w-75"
+                src="images/mac.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="col-12 col-lg-6">
+              <h1>Customize your Blue 24-inch iMAC with Apple M1 chip</h1>
+              <p class="mb-4">
+                Customize your Blue 24-inch iMac with an Apple M1 chip. Apple M1
+                chip with 8-core CPU with 4 performance cores and 4 efficiency
+                cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory
+                256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse
+                Magic Keyboard -US English Memory
+              </p>
+
+              <!----------------------- Product section ------------->
+
+              <div id="parent">
+                <h4 class="fw-bold">Memory</h4>
+                <div class="memory mb-4">
+                  <button class="btn btn-primary" value="0">8GB unified memory</button>
+                  <button class="btn btn-primary" value="180">
+                    16GB unified memory
+                  </button>
+                </div>
+                <h4 class="fw-bold">Storage</h4>
+                <div class="storage mb-4">
+                  <button class="btn btn-primary" value="0">
+                    256GB SSD storage
+                  </button>
+                  <button class="btn btn-primary" value="100">
+                    512GB SSD storage
+                  </button>
+                  <button class="btn btn-primary" value="180">
+                    1TB SSD storage
+                  </button>
+                </div>
+                <h4 class="fw-bold">Choose your delivery option</h4>
+                <div class="delivery mb-4">
+                  <button class="btn btn-primary" value="0">
+                    Friday, Aug 25 FREE Prime delivery
+                  </button>
+                  <button class="btn btn-primary" value="20">
+                    Friday, Aug 21 delivery charge $20
+                  </button>
+                </div>
+              </div>
+
+              <!----------------------- Product Price  section ------------->
+
+              <div class="cart-item">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h5>Best Price</h5>
+                    <h5>Extra Memory Cost</h5>
+                    <h5>Extra Storage Cost</h5>
+                    <h5>Delivery Charge</h5>
+                  </div>
+
+                  <div class="col-md-4">
+                    <h5>$<span id="best-price">1299</span></h5>
+                    <h5>$<span id="memory-price">0</span></h5>
+                    <h5>$<span id="storage-price">0</span></h5>
+                    <h5>$<span id="delivery-price">0</span></h5>
+                  </div>
+                </div>
+              </div>
+              <hr
+                style="width: 85%; border: none; border-bottom: 3px solid black"
+              />
+              <div class="row">
+                <div class="col-md-8">
+                  <h5 class="fw-bold">Total Price</h5>
+                </div>
+                <div class="col-md-4">
+                  <h4>$<span id="total-price">1299</span></h4>
+                </div>
+              </div>
+
+              <!-------------- promo code section---------------------- -->
+
+              <h3>Add Promo Code</h3>
+              <div class="promo-code mb-4">
+                <input
+                  class="pb-2 me-3"
+                  type="text"
+                  placeholder="Type Promo Code"
+                  name=""
+                  id="promo-code"
+                />
+                <button class="btn btn-danger" onclick="promo('stevekaku')">
+                  Apply
+                </button>
+              </div>
+            </div>
+            <hr
+              style="width: 100%; border: none; border-bottom: 3px solid black"
+            />
+            <h1 class="text-center">Total: $<span id="total">1299</span></h1>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Bootstrap JS Link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
